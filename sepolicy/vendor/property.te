@@ -7,3 +7,6 @@ vendor_restricted_prop(vendor_mwqem_prop);
 
 # slm property
 vendor_restricted_prop(vendor_slm_prop);
+
+# Subsystem state notifier
+vendor_internal_prop(vendor_subsys_state_notifier_prop);

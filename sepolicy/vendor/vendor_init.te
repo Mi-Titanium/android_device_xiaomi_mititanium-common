@@ -21,6 +21,7 @@ get_prop(vendor_init, vendor_fp_prop)
 set_prop(vendor_init, vendor_fp_prop)
 get_prop(vendor_init, vendor_fingerprint_prop)
 set_prop(vendor_init, vendor_fingerprint_prop)
+get_prop(vendor_init, vendor_subsys_state_notifier_prop)
 set_prop(vendor_init, camera_prop)
 set_prop(vendor_init, vendor_dataqdp_prop);
 set_prop(vendor_init, vendor_fm_prop);

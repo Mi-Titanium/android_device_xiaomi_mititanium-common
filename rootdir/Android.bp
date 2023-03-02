@@ -3,17 +3,17 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 //
- 
+
 prebuilt_etc {
-    name: "init.msm.usb.configfs.rc",
-    src: "etc/init.msm.usb.configfs.rc",
+    name: "init.qcom.rc",
+    src: "etc/init.qcom.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "etc/init.qcom.rc",
+    name: "init.msm.usb.configfs.rc",
+    src: "etc/init.msm.usb.configfs.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -35,6 +35,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.xiaomi.rc",
+    src: "etc/init.xiaomi.rc",
     sub_dir: "init/hw",
     vendor: true,
 }

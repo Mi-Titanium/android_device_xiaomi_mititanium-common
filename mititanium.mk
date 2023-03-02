@@ -358,12 +358,12 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.xiaomi.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
@@ -404,6 +404,10 @@ ifneq ($(AB_OTA_UPDATER), true)
 PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota
 endif
+
+# Subsystem state notifier
+PRODUCT_PACKAGES += \
+    subsystem_state_notifier
 
 # Telephony
 PRODUCT_PACKAGES += \

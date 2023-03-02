@@ -34,3 +34,5 @@ persist.vendor.mwqem.           u:object_r:vendor_mwqem_prop:s0
 # SLM
 persist.vendor.slm.             u:object_r:vendor_slm_prop:s0
 
+# Subsystem state notifier
+vendor.subsys_state_notifier.		u:object_r:vendor_subsys_state_notifier_prop:s0
