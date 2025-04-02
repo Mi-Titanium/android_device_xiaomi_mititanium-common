@@ -176,4 +176,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
-include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+include vendor/xiaomi/mititanium-common/BoardConfigVendor.mk
