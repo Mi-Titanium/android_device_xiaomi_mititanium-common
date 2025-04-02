@@ -127,7 +127,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_TAP_TO_WAKE_NODE := "/proc/sys/dev/xiaomi_msm8953_touchscreen/enable_dt2w"
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
