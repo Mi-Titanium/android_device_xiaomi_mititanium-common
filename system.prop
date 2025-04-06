@@ -21,7 +21,6 @@ af.fast_track_multiplier=1
 
 # Charger
 ro.charger.disable_init_blank=true
-ro.charger.enable_suspend=true
 
 # Data
 ro.vendor.use_data_netmgrd=true
