@@ -155,7 +155,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    libgralloc.qti 
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.vulkan=adreno
@@ -171,7 +170,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
-    libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
     vendor.display.config@1.11.vendor \
