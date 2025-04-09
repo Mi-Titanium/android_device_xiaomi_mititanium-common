@@ -80,7 +80,6 @@ TARGET_NO_BOOTLOADER := true
 # Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_TS_MAKEUP := true
-TARGET_SUPPORT_HAL1 := false
 
 # Display
 TARGET_USES_ION := true
