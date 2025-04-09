@@ -13,6 +13,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Signed
 -include vendor/extra/product.mk
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.opengles.version=196610
+
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
  
