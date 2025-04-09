@@ -155,17 +155,27 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    libgralloc.qti 
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.vulkan=adreno
+
+PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    memtrack.msm8953 
+
+PRODUCT_PACKAGES += \
+    libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
-    libvulkan \
-    vendor.display.config@1.0.vendor
+    vendor.display.config@1.11.vendor \
+    vendor.display.config@2.0.vendor
 
 PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink32 \
