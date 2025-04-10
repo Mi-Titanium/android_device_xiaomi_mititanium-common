@@ -145,6 +145,10 @@ TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_k4.19.prop
+endif
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_F2FS := true
