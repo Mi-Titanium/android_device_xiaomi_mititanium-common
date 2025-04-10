@@ -16,6 +16,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Signed
 -include vendor/extra/product.mk
 
+# Kernel
+TARGET_KERNEL_VERSION ?= 4.9
+
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.opengles.version=196610
 
@@ -143,8 +146,10 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor
 
 # disable_configstore
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
 PRODUCT_PACKAGES += \
     disable_configstore
+endif
 
 # Display
 PRODUCT_PACKAGES += \
