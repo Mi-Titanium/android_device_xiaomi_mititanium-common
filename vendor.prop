@@ -23,11 +23,16 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.hw_timeout_multiplier=6
 
 # Media
-debug.stagefright.omx_default_rank=0
-ro.media.xml_variant.codecs=_vendor
-ro.media.xml_variant.codecs_performance=_vendor
 vendor.mediacodec.binder.size=4
+av.debug.disable.pers.cache=1
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
+media.stagefright.audio.sink=280
+vendor.vidc.dec.downscalar_height=1088
+vendor.vidc.dec.downscalar_width=1920
 vendor.vidc.disable.split.mode=1
+vendor.vidc.enc.disable.pq=true
+vendor.vidc.enc.disable_bframes=1
 
 af.fast_track_multiplier=1
 audio.offload.min.duration.secs=30
