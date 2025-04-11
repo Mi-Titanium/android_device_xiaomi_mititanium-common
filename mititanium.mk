@@ -16,9 +16,6 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Signed
 -include vendor/extra/product.mk
 
-# Kernel
-TARGET_KERNEL_VERSION ?= 4.9
-
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.opengles.version=196610
 
