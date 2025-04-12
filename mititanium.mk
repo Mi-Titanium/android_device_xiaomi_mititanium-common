@@ -149,6 +149,14 @@ PRODUCT_PACKAGES += \
 endif
 
 # Display
+ifeq ($(TARGET_USES_Q_DISPLAY_STACK),true)
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.vulkan=msm8953
+else
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@2.0.vendor \
@@ -157,9 +165,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.vulkan=adreno
+endif
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
