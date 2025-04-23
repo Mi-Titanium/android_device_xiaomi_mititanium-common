@@ -119,16 +119,6 @@ TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_xiaomi_mititanium
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
 
-# Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_SYSTEMIMAGE_PARTITION_SIZE ?= 3221225472
-BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
-BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware \
-    /mnt/vendor/persist:/persist
-
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -147,11 +137,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 ifeq ($(TARGET_KERNEL_VERSION),4.19)
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_k4.19.prop
 endif
-
-# Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
-TARGET_USERIMAGES_USE_F2FS := true
-TARGET_USERIMAGES_USE_EXT4 := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
