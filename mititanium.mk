@@ -144,10 +144,8 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor
 
 # disable_configstore
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
 PRODUCT_PACKAGES += \
     disable_configstore
-endif
 
 # Display
 ifeq ($(TARGET_USES_Q_DISPLAY_STACK),true)
