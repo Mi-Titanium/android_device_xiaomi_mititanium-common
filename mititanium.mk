@@ -16,6 +16,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Kernel
 TARGET_KERNEL_VERSION ?= 4.9
 
+# OTA
+AB_OTA_UPDATER := false
+
 # Signed
 -include vendor/lineage-priv/keys/keys.mk
 
