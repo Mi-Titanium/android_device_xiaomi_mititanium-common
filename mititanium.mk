@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Kernel
+TARGET_KERNEL_VERSION ?= 4.9
+
 # Signed
 -include vendor/lineage-priv/keys/keys.mk
 
