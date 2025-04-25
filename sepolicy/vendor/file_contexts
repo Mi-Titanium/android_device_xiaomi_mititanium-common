@@ -30,7 +30,7 @@
 /persist(/.*)?                                                u:object_r:mnt_vendor_file:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi      u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi      u:object_r:hal_fingerprint_default_exec:s0
 
 # Executables
 /(vendor|system/vendor)/bin/subsystem_state_notifier		u:object_r:subsystem_state_notifier_exec:s0
