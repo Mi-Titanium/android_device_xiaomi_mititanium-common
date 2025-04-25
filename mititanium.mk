@@ -174,11 +174,9 @@ endif
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    memtrack.msm8953 
+    vendor.qti.hardware.memtrack-service 
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
