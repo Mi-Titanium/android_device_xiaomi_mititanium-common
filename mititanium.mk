@@ -13,6 +13,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 # Kernel
 TARGET_KERNEL_VERSION ?= 4.9
 
+# Display
+TARGET_USES_Q_DISPLAY_STACK := true
+
 # OTA
 AB_OTA_UPDATER := false
 
