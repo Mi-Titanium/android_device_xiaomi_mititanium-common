@@ -169,7 +169,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display 
+    android.hardware.graphics.mapper@4.0-impl-qti-display
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.vulkan=adreno
 endif
@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    vendor.qti.hardware.memtrack-service 
+    vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
@@ -203,7 +203,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio 
+    FMRadio
 
 $(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
 $(call soong_config_set,libfmjni,vendor,qcom)
@@ -272,7 +272,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi_vince
+    android.hardware.light-service.xiaomi_mititanium
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -377,7 +377,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
-    librmnetctl 
+    librmnetctl
 
 # Sensors
 PRODUCT_PACKAGES += \
